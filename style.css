@@ -1,0 +1,841 @@
+/* Barra de navegacion */
+
+.navbar {
+    padding: 1rem; /*espacio superior barra de navegación*/
+    background-color: rgb(255, 255, 255); /*color de fondo barra de navegación*/
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .nav-item1 a{
+    color: #5e4ea9;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif; ;
+
+  }
+
+  .nav-item2 a{
+    color: #5e4ea9;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;;
+
+  } 
+  .navbar-collapse {
+    align-items: flex-end;
+    justify-content: space-between;}
+
+    .nav-item1{
+      margin-right: 20px;
+    }
+    .nav-item2{
+      margin-right: 20px;
+    }
+
+
+
+  /*menu desplegable*/
+
+  .dropbtn {
+    margin-left: 20px;
+    background-color:#5e4ea9;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#938fe5; /*color de fondo del boton*/
+    min-width:160 px; 
+    box-shadow: 0px 8px 16px 0px #3e428e;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+        padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  } /*contenidos del menu*/
+  
+  .dropdown-content a:hover {background-color: #3e428e;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #938fe5;}
+
+
+  /* Estilos generales */
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .seccion-sobre-nosotros {
+    color: #5e4ea9;
+    background-color: white;
+  } /*Texto "Sobre mi*/
+  
+  .seccion-clara {
+    color: #5e4ea9;
+    background-color:white;
+  } /*Texto experiencia*/
+   
+  .seccion-titulo {
+    font-size: 2.5rem;
+    padding: 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  } /* Texto del título de las secciones*/
+   
+  .seccion-descripcion {
+    font-size: 1.5rem;
+    color: #9e87e0;
+  } /*Texto que acompaña al título de las secciones*/
+  
+  .seccion-texto {
+    font-size: 1.2rem;
+  }  /* Texto general*/
+  
+  .btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+  }
+  
+  .texto-negro {
+    color:#5e4ea9 ;
+  }
+  
+  .texto-blanco {
+    color: white;
+  }
+  
+  /* Seccion Portada */
+  
+  .hero {
+    background-color: white;
+    min-height: 50px;
+    text-align: center;
+  }
+  
+  .portada-principal {
+    padding: 3rem;
+ 
+  }
+  
+  .portada-imagen {
+    width:175 px;
+    height: 250px;
+    margin: 20px;
+    }
+  
+  .portada-principal h2 {
+    font-size: 3rem;
+    color: #5e4ea9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  } /*Tamaño letra texto animado*/
+  
+  
+  /* Sobre nosotros */
+  
+  .sobre-nosotros {
+    height: 500px;
+    padding: 10px;
+  }
+  
+  .sobre-nosotros .contenedor {
+    max-width: 600px;
+    text-align: center;
+  }
+
+
+  
+  /* Productos */
+  
+  .productos {
+    padding: 40px 40px 60px 40px;
+  }
+  
+  .productos .columna {
+    padding: 20px;
+    border: 2px solid #5e4ea9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+  }
+  
+  .productos .columna:hover {
+    color: white;
+    background-color: #4b3d96;
+  }
+  
+  .productos i {
+    font-size: 2.5rem;
+    color: #f5f6f7;
+    background-color: #5e4ea9;
+    padding: 8px 19px;
+    border-radius: 50%;
+  }
+  
+  .productos-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .productos-titulo:hover {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: white;
+  }
+  
+ 
+  
+
+
+  /* Galeria de Productos */
+  
+  /*Galeria aretes*/
+
+  
+  .aretes .carousel {
+    max-width: 800px;
+  }
+  
+  .aretes-item {
+    height: 500px;
+  }
+  
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .aretes-imagen {
+    height: 300px;
+    width: 300px;
+    margin: 10px 10px 20px 10px;
+  }
+  
+  .aretes-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .aretes-info {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .aretes-info p {
+    margin-bottom: 0;
+  }
+  
+  .aretes-footer .Tipo {
+    font-size: 1.2rem;
+  }
+  
+  .aretes-info .Costo {
+    font-size: 0.9rem;
+    color: #ba86f3;
+  }
+
+
+  /*Galeria pulseras*/
+
+  .pulseras .carousel {
+    max-width: 800px;
+  }
+  
+  .pulseras-item {
+    height: 500px;
+  }
+  
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pulseras-imagen {
+    height: 300px;
+    width: 300px;
+    margin: 10px 10px 20px 10px;
+  }
+  
+  .pulseras-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .pulseras-info {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .pulseras-info p {
+    margin-bottom: 0;
+  }
+  
+  .pulseras-footer .Tipo {
+    font-size: 1.2rem;
+  }
+  
+  .pulseras-info .Costo {
+    font-size: 0.9rem;
+    color: #ba86f3;
+  }
+
+  /*Galeria Collares*/
+
+  .collares .carousel {
+    max-width: 800px;
+  }
+  
+  .collares-item {
+    height: 500px;
+  }
+  
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .collares-imagen {
+    height: 300px;
+    width: 300px;
+    margin: 10px 10px 20px 10px;
+  }
+  
+  .collares-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .collares-info {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .collares-info p {
+    margin-bottom: 0;
+  }
+  
+  .collares-footer .Tipo {
+    font-size: 1.2rem;
+  }
+  
+  .collares-info .Costo {
+    font-size: 0.9rem;
+    color: #ba86f3;
+  }
+
+
+  /*Galeria Collares de perlas*/
+
+  .perlas .carousel {
+    max-width: 800px;
+  }
+  
+  .perlas-item {
+    height: 500px;
+  }
+  
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .perlas-imagen {
+    height: 300px;
+    width: 300px;
+    margin: 10px 10px 20px 10px;
+  }
+  
+  .perlas-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .perlas-info {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .perlas-info p {
+    margin-bottom: 0;
+  }
+  
+  .perlas-footer .Tipo {
+    font-size: 1.2rem;
+  }
+  
+  .perlas-info .Costo {
+    font-size: 0.9rem;
+    color: #ba86f3;
+  }
+/*Galeria de portalentes*/
+.portalentes.carousel {
+  max-width: 800px;
+}
+
+.portalentes-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portalentes-imagen {
+  height: 300px;
+  width: 300px;
+  margin: 10px 10px 20px 10px;
+}
+
+.portalentes-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portalentes-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.portalentes-info p {
+  margin-bottom: 0;
+}
+
+.portalentes-footer .Tipo {
+  font-size: 1.2rem;
+}
+
+.portalentes-info .Costo {
+  font-size: 0.9rem;
+  color: #ba86f3;
+}
+
+/*Portacubrebocas Galeria*/
+
+.portacubrebocas.carousel {
+  max-width: 800px;
+}
+
+.portacubrebocas-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portacubrebocas-imagen {
+  height: 300px;
+  width: 300px;
+  margin: 10px 10px 20px 10px;
+}
+
+.portacubrebocas-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portacubrebocas-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.portacubrebocas-info p {
+  margin-bottom: 0;
+}
+
+.portacubrebocas-footer .Tipo {
+  font-size: 1.2rem;
+}
+
+.portacubrebocas-info .Costo {
+  font-size: 0.9rem;
+  color: #ba86f3;
+}
+
+
+/*Anillos Galeria*/
+
+.anillos .carousel {
+  max-width: 800px;
+}
+
+.anillos-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.anillos-imagen {
+  height: 300px;
+  width: 300px;
+  margin: 10px 10px 20px 10px;
+}
+
+.anillos-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.anillos-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.anillos-info p {
+  margin-bottom: 0;
+}
+
+.anillos-footer .Tipo {
+  font-size: 1.2rem;
+}
+
+.anillos-info .Costo {
+  font-size: 0.9rem;
+  color: #ba86f3;
+}
+
+/*Galeria Arracadas*/
+
+
+.arracadas .carousel {
+  max-width: 800px;
+}
+
+.arracadas-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.arracadas-imagen {
+  height: 300px;
+  width: 300px;
+  margin: 10px 10px 20px 10px;
+}
+
+.arracadas-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.arracadas-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.arracadas-info p {
+  margin-bottom: 0;
+}
+
+.arracadas-footer .Tipo {
+  font-size: 1.2rem;
+}
+
+.arracadas-info .Costo {
+  font-size: 0.9rem;
+  color: #ba86f3;
+}
+
+
+
+/*Galeria Straps*/
+
+
+.straps .carousel {
+  max-width: 800px;
+}
+
+.straps-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.straps-imagen {
+  height: 300px;
+  width: 300px;
+  margin: 10px 10px 20px 10px;
+}
+
+.straps-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.straps-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.straps-info p {
+  margin-bottom: 0;
+}
+
+.straps-footer .Tipo {
+  font-size: 1.2rem;
+}
+
+.straps-info .Costo {
+  font-size: 0.9rem;
+  color: #ba86f3;
+}
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* PEDIDOS */
+  
+  .pedidos .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+  }
+  
+  .pedidos .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(174, 149, 243);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+  }
+  
+  .pedidos .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pedidos .descripcion {
+    color: white;
+    font-size: 1.2rem;
+  } 
+  
+  .pedidos button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .pedidos button:hover {
+    background-color: white;
+    color: #5e4ea9;
+  } /*Color del texto del boton en hover*/
+  
+  .pedidos button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  } 
+  
+  .pedidos button:hover i {
+    color:#5e4ea9;
+  } /*Color del sobre en hover*/
+
+
+  .pedidos p{
+    color: #f5f6f7;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Pie de pagina (footer) */
+  
+  footer {
+    min-height: 500px;
+  }
+  
+  .footer-logo {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid #5e4ea9;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales i {
+    color: #5e4ea9;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales a:hover {
+    background-color:#5e4ea9;
+    border: 2px solid rgb(140, 107, 233);
+  } /*Color de fondo hover*/
+  
+  .iconos-redes-sociales a:hover i {
+    color: white;
+  } /*Color icono hover*/
+  
+  .derechos-de-autor {
+    font-size: 15px;
+    color: #5e4ea9;
+    padding: 20px;
+  }
+  
+  /* Adaptable (Responsivo) */
+  
+  @media screen and (max-width: 400px) {
+    .overlay p {
+      font-size: 18px;
+    }
+  
+    .overlay i {
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .navbar-brand {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .testimonio-imagen {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .testimonio-texto {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+      max-width: 600px;
+    }
+  }
